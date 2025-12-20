@@ -29,6 +29,6 @@ public class ReverseString {
         String reversed = reverse(s);
         System.out.println("Reversed string: " + reversed);
 
-        sc.close();
+         );
     }
 }
