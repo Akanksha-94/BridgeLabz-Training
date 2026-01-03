@@ -1,4 +1,4 @@
-class BankAccount {
+class SimulateAnATM {
     String accountHolder;
     long accountNumber;
     double balance;
@@ -30,12 +30,12 @@ class BankAccount {
     }
 
     public static void main(String[] args) {
-      
-        BankAccount account = new BankAccount();
+
+        SimulateAnATM account = new SimulateAnATM();
 
         // Account details
         account.accountHolder = "Rohan";
-        account.accountNumber = 1234567890;
+        account.accountNumber = 1234567890L;
         account.balance = 10000.0;
 
         System.out.println("Account Holder: " + account.accountHolder);

@@ -1,4 +1,4 @@
-class Student {
+class SimulateStudentReport {
     String name;
     int rollNumber;
     int marks;
@@ -29,9 +29,9 @@ class Student {
     }
 
     public static void main(String[] args) {
-      
+
         // First student
-        Student s1 = new Student();
+        SimulateStudentReport s1 = new SimulateStudentReport();
         s1.name = "Rohan";
         s1.rollNumber = 101;
         s1.marks = 85;
@@ -39,7 +39,7 @@ class Student {
         s1.displayDetails();
 
         // Second student
-        Student s2 = new Student();
+        SimulateStudentReport s2 = new SimulateStudentReport();
         s2.name = "Sneha";
         s2.rollNumber = 102;
         s2.marks = 72;

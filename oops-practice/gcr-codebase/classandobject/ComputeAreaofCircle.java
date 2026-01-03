@@ -1,4 +1,4 @@
-class Circle {
+class ComputerAreaofCircle {
     double radius;
 
     // Method to calculate area
@@ -14,12 +14,11 @@ class Circle {
     }
 
     public static void main(String[] args) {
-      
-        Circle c = new Circle();
+
+        ComputerAreaofCircle c = new ComputerAreaofCircle();
 
         // Assign radius
         c.radius = 2.5;
-
 
         // Display results
         c.calculateArea();

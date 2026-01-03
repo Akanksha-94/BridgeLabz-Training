@@ -1,5 +1,4 @@
-
-class Book {
+class HandleBookDetails {
     String title;
     String author;
     double price;
@@ -9,23 +8,21 @@ class Book {
         System.out.println("Title of the book: " + title);
         System.out.println("Author of the book: " + author);
         System.out.println("Price of the book: " + price);
-
         System.out.println();
-
     }
 
     public static void main(String[] args) {
 
         // First book
-        Book book1 = new Book();
-        book1.title = "2States";
+        HandleBookDetails book1 = new HandleBookDetails();
+        book1.title = "2 States";
         book1.author = "Chetan Bhagat";
         book1.price = 500.0;
 
         // Second book
-        Book book2 = new Book();
-        book2.title = "Wings Of Fire";
-        book2.author = "Abdul kalam.A.P.J";
+        HandleBookDetails book2 = new HandleBookDetails();
+        book2.title = "Wings of Fire";
+        book2.author = "A. P. J. Abdul Kalam";
         book2.price = 500.0;
 
         // Display details
