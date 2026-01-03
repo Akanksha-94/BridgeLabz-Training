@@ -1,11 +1,11 @@
 // Parent Class
-public class Student {
+public class UniversityManagementSystem {
 
     public int rollNumber;      // public
     protected String name;      // protected
     private double cgpa;        // private
 
-    public Student(int rollNumber, String name, double cgpa) {
+    public UniversityManagementSystem(int rollNumber, String name, double cgpa) {
         this.rollNumber = rollNumber;
         this.name = name;
         this.cgpa = cgpa;
@@ -29,7 +29,7 @@ public class Student {
 }
 
 // Subclass
-class PostgraduateStudent extends Student {
+class PostgraduateStudent extends UniversityManagementSystem {
 
     public PostgraduateStudent(int rollNumber, String name, double cgpa) {
         super(rollNumber, name, cgpa);

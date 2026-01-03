@@ -1,4 +1,4 @@
-public class Book {
+public class LibraryBookSystem {
 
     // Private attributes
     private String title;
@@ -7,7 +7,7 @@ public class Book {
     private boolean available;
 
     // Default constructor
-    public Book() {
+    public LibraryBookSystem() {
         this.title = "Unknown";
         this.author = "Unknown";
         this.price = 0.0;
@@ -15,7 +15,7 @@ public class Book {
     }
 
     // Parameterized constructor
-    public Book(String title, String author, double price, boolean available) {
+    public LibraryBookSystem(String title, String author, double price, boolean available) {
         this.title = title;
         this.author = author;
         this.price = price;
@@ -76,7 +76,7 @@ public class Book {
     // Main method to test the Book class
     public static void main(String[] args) {
         // Creating a book using parameterized constructor
-        Book b1 = new Book("Java Programming", "John Doe", 499.99, true);
+        LibraryBookSystem b1 = new LibraryBookSystem("Java Programming", "John Doe", 499.99, true);
         b1.displayBookInfo();
 
         // Borrow the book
@@ -87,7 +87,7 @@ public class Book {
         b1.borrowBook();  // Should say not available
 
         // Create another book using default constructor
-        Book b2 = new Book();
+        LibraryBookSystem b2 = new LibraryBookSystem();
         b2.displayBookInfo();
     }
 }

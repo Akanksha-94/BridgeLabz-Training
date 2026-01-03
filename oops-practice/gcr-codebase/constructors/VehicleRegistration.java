@@ -1,4 +1,4 @@
-public class Vehicle {
+public class VehicleRegistration {
 
     // Instance variables (unique to each vehicle)
     private String ownerName;
@@ -8,7 +8,7 @@ public class Vehicle {
     private static double registrationFee = 100.0; // default fee
 
     // Parameterized constructor
-    public Vehicle(String ownerName, String vehicleType) {
+    public VehicleRegistration(String ownerName, String vehicleType) {
         this.ownerName = ownerName;
         this.vehicleType = vehicleType;
     }
@@ -30,15 +30,15 @@ public class Vehicle {
     // Main method to test the Vehicle class
     public static void main(String[] args) {
         // Create vehicles
-        Vehicle v1 = new Vehicle("Alice", "Car");
-        Vehicle v2 = new Vehicle("Bob", "Motorcycle");
+        VehicleRegistration v1 = new VehicleRegistration("Alice", "Car");
+        VehicleRegistration v2 = new VehicleRegistration("Bob", "Motorcycle");
 
         // Display details before updating fee
         v1.displayVehicleDetails();
         v2.displayVehicleDetails();
 
         // Update registration fee for all vehicles
-        Vehicle.updateRegistrationFee(150.0);
+        VehicleRegistration.updateRegistrationFee(150.0);
 
         System.out.println("\nAfter updating registration fee:");
 

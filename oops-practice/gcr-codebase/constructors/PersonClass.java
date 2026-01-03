@@ -1,4 +1,4 @@
-public class Person {
+public class PersonClass {
 
     // Private attributes
     private String name;
@@ -6,21 +6,21 @@ public class Person {
     private String email;
 
     // Default constructor
-    public Person() {
+    public PersonClass() {
         this.name = "Unknown";
         this.age = 0;
         this.email = "Unknown";
     }
 
     // Parameterized constructor
-    public Person(String name, int age, String email) {
+    public PersonClass(String name, int age, String email) {
         this.name = name;
         this.age = age;
         this.email = email;
     }
 
     // Copy constructor
-    public Person(Person other) {
+    public PersonClass(PersonClass other) {
         this.name = other.name;
         this.age = other.age;
         this.email = other.email;
@@ -62,21 +62,21 @@ public class Person {
     public static void main(String[] args) {
 
         // Create a person using parameterized constructor
-        Person p1 = new Person("Alice", 25, "alice@example.com");
+        PersonClass p1 = new PersonClass("Alice", 25, "alice@example.com");
 
         p1.displayInfo(); // Output: Name: Alice, Age: 25, Email: alice@example.com
 
 
 
         // Create a copy of the above person using copy constructor
-        Person p2 = new Person(p1);
+        PersonClass p2 = new PersonClass(p1);
 
         p2.displayInfo(); // Output: Name: Alice, Age: 25, Email: alice@example.com
 
 
 
         // Create a person using default constructor
-        Person p3 = new Person();
+        PersonClass p3 = new PersonClass();
         
         p3.displayInfo(); // Output: Name: Unknown, Age: 0, Email: Unknown
     }

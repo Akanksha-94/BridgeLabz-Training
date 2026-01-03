@@ -1,10 +1,10 @@
-public class Employee {
+public class EmployeeRecords {
 
     public int employeeID;        // public
     protected String department;  // protected
     private double salary;        // private
 
-    public Employee(int employeeID, String department, double salary) {
+    public EmployeeRecords(int employeeID, String department, double salary) {
         this.employeeID = employeeID;
         this.department = department;
         this.salary = salary;
@@ -26,7 +26,7 @@ public class Employee {
 }
 
 // Subclass
-class Manager extends Employee {
+class Manager extends EmployeeRecords {
 
     public Manager(int employeeID, String department, double salary) {
         super(employeeID, department, salary);

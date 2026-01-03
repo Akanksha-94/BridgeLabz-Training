@@ -1,4 +1,4 @@
-public class CarRental {
+public class CarRentalSystem {
 
     // Private attributes for encapsulation
     private String customerName;
@@ -7,7 +7,7 @@ public class CarRental {
     private double costPerDay;
 
     // Default constructor
-    public CarRental() {
+    public CarRentalSystem() {
         this.customerName = "Unknown";
         this.carModel = "Standard";
         this.rentalDays = 1;
@@ -15,7 +15,7 @@ public class CarRental {
     }
 
     // Parameterized constructor
-    public CarRental(String customerName, String carModel, int rentalDays, double costPerDay) {
+    public CarRentalSystem(String customerName, String carModel, int rentalDays, double costPerDay) {
         this.customerName = customerName;
         this.carModel = carModel;
         if (rentalDays > 0) {
@@ -33,7 +33,7 @@ public class CarRental {
     }
 
     // Copy constructor
-    public CarRental(CarRental other) {
+    public CarRentalSystem(CarRentalSystem other) {
         this.customerName = other.customerName;
         this.carModel = other.carModel;
         this.rentalDays = other.rentalDays;
@@ -96,15 +96,15 @@ public class CarRental {
     // Main method to test CarRental class
     public static void main(String[] args) {
         // Default rental
-        CarRental rental1 = new CarRental();
+        CarRentalSystem rental1 = new CarRentalSystem();
         rental1.displayRentalInfo();
 
         // Parameterized rental
-        CarRental rental2 = new CarRental("Alice", "SUV", 5, 250.0);
+        CarRentalSystem rental2 = new CarRentalSystem("Alice", "SUV", 5, 250.0);
         rental2.displayRentalInfo();
 
         // Copy constructor
-        CarRental rental3 = new CarRental(rental2);
+        CarRentalSystem rental3 = new CarRentalSystem(rental2);
         rental3.setCustomerName("Bob"); // Change customer for the copy
         rental3.displayRentalInfo();
     }

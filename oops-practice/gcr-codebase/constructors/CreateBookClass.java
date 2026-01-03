@@ -1,4 +1,4 @@
-public class Book {
+public class CreateBookClass {
 
     // Attributes should be private for encapsulation
     private String title;
@@ -6,14 +6,14 @@ public class Book {
     private double price;
 
     // Default constructor
-    public Book() {
+    public CreateBookClass() {
         this.title = "NA";
         this.author = "NA";
         this.price = 0.0;
     }
 
     // Parameterized constructor
-    public Book(String title, String author, double price) {
+    public CreateBookClass(String title, String author, double price) {
         this.title = title;
         this.author = author;
         this.price = price;
@@ -54,11 +54,11 @@ public class Book {
     // Main method to test Book class
     public static void main(String[] args) {
         // Default book
-        Book b1 = new Book();
+        CreateBookClass b1 = new CreateBookClass();
         b1.displayInfo();
 
         // Parameterized book
-        Book b2 = new Book("Java Programming", "John Doe", 499.99);
+        CreateBookClass b2 = new CreateBookClass("Java Programming", "John Doe", 499.99);
         b2.displayInfo();
 
         // Update price using setter
