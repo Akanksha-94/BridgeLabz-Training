@@ -81,10 +81,12 @@ public class StringConcatenationPerformance {
     System.out.println("\n--- Concatenating " + wordCount + " words ---");
 
     // String concatenation (skip for very large counts)
+    long startString = 0;
+    long endString = 0;
     if (wordCount <= 5000) {
-      long startString = System.nanoTime();
+      startString = System.nanoTime();
       String result1 = concatenateUsingString(words);
-      long endString = System.nanoTime();
+      endString = System.nanoTime();
       double stringTime = (endString - startString) / 1_000_000.0;
       System.out.printf("String (O(N²)): %.3fms (Length: %d)%n", stringTime, result1.length());
     } else {
