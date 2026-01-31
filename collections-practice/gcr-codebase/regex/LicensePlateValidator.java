@@ -1,3 +1,4 @@
+import java.util.regex.*;
 public class LicensePlateValidator {
   public static boolean isValid(String s) {
     return s != null && s.matches("^[A-Z]{2}\\d{4}$");
