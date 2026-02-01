@@ -1,7 +1,7 @@
 {
   "java.debug.settings.onBuildFailureProceed": true,
   "java.project.sourcePaths": [
-    "oops-practice\\gcr-codebase"
+    "oops-practice/scenario-based"
   ],
   "java.project.referencedLibraries": []
 }
