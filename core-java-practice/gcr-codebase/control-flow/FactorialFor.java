@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class FactorialFor {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter an integer to find its factorial: ");
+    int number = sc.nextInt();
+
+    // Check if it's a positive integer
+    if (number < 0) {
+      System.out.println("Please enter a positive integer!");
+      return;
+    }
+
+    // Calculate factorial using for loop
+    long factorial = 1;
+    for (int i = number; i > 0; i--) {
+      factorial *= i;
+    }
+
+    System.out.println("Factorial of " + number + " is: " + factorial);
+  }
+}
